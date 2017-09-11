@@ -1,4 +1,21 @@
+server:
+ port: 5052
 
+spring:
+  data:
+   rest:
+    base-path: login
+  jpa:
+    hibernate:
+     ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/emp?useSSL=false
+    username: root
+    password: Vedams@123
 
-#logging.level.org.springframework.web=DEBUG
-#logging.level.org.springframework.security: DEBUG
+logging:
+ level:
+  org:
+   springframework:
+    web: DEBUG
+    security: DEBUG
