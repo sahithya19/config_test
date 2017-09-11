@@ -1,6 +1,6 @@
 security:
  user:
-   password:password
+   password: password
  basic:
    enabled: false
  oauth2:
