@@ -6,14 +6,3 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.2.132:8761/eureka/
 
-security:
- user:
-   password: password
- basic:
-   enabled: false
- oauth2:
-   client:
-     client-id: my-client-with-secret_test
-     client-secret: secret
-   resource:
-     user-info-uri: http://192.168.2.34:8080/uaa/userinfo
