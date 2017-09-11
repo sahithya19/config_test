@@ -15,3 +15,7 @@ security:
    resource:
      user-info-uri: http://192.168.2.34:8080/uaa/userinfo
 
+     
+management:
+  security:
+    enabled: false
