@@ -1,2 +1,13 @@
 server:
   port: 5053
+security:
+ user:
+   password: password
+ basic:
+   enabled: false
+ oauth2:
+   client:
+     client-id: my-client-with-secret
+     client-secret: secret
+   resource:
+     user-info-uri: http://192.168.2.34:8080/uaa/userinfo
