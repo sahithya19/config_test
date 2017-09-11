@@ -8,7 +8,7 @@ security:
      client-id: my-client-with-secret
      client-secret: secret
    resource:
-     user-info-uri: ${vcap.services.uaa-service.credentials.uri:http://192.168.2.34:8080/uaa}/userinfo
+     user-info-uri: http://192.168.2.34:8080/uaa/userinfo
 
 #logging.level.org.springframework.web=DEBUG
 #logging.level.org.springframework.security: DEBUG
