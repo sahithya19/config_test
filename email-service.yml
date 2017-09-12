@@ -9,15 +9,8 @@ eureka:
     hostname: ${vcap.application.uris[0]:localhost}
     nonSecurePort: 80
 
-spring:
-  jpa:
-    hibernate:
-     ddl-auto: update
-  datasource:
-    url: jdbc:mysql://localhost:3306/emp?useSSL=false
-    username: root
-    password: Vedams@123
-security:
+
+ security:
   basic:
     enabled: true
     
