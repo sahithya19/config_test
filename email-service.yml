@@ -1,1 +1,28 @@
 
+server:
+  port: 8899
+  
+security:
+  basic:
+    enabled: true
+    
+
+spring:
+  mail:
+    protocol: smtp
+    host: smtp.gmail.com
+    port: 587
+    username: msateesh889@gmail.com	
+    password: Amma@143
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
+
+
+
+# Logging the details 
+logging:
+  file: EDPmailService.log
