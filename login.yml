@@ -1,5 +1,12 @@
 server:
  port: 5052
+ 
+ eureka:
+  instance:
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    hostname: ${vcap.application.uris[0]:localhost}
+    nonSecurePort: 80
 
 spring:
   data:
