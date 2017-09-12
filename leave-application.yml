@@ -9,9 +9,6 @@ eureka:
     nonSecurePort: 80
 
 spring:
-  data:
-   rest:
-    base-path: login
   jpa:
     hibernate:
      ddl-auto: update
