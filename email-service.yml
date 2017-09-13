@@ -28,7 +28,7 @@ spring:
           auth: true
           starttls:
             enable: true
-
+message: default
 
 
 # Logging the details 
