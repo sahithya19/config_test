@@ -1,0 +1,39 @@
+server: 
+  port: 8766
+zuul:
+  retryable: true  
+  routes: 
+    ui: 
+      path: /**
+      service-id: UI-APPLICATION
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+    leaveapp: 
+      path: /leave/**  
+      service-id: leave-application
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+    leavetypes: 
+      path: /types/**  
+      service-id: LEAVE-TYPE-APPLICATION
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+    login: 
+      path: /login/**  
+      service-id: LOGIN
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+    mail: 
+      path: /mailService/**   
+      service-id: EMAIL-SERVICE
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+
+hystrix: 
+  command: 
+    default: 
+      execution: 
+        isolation: 
+          thread:
+            timeoutInMilliseconds: 600000      
+      
