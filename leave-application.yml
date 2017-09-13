@@ -23,4 +23,3 @@ logging:
    springframework:
     web: DEBUG
     security: DEBUG
-message: default
