@@ -10,9 +10,9 @@ server:
 #    nonSecurePort: 80
 
 
- security:
-  basic:
-    enabled: true
+ #security:
+  #basic:
+   # enabled: true
     
 
 spring:
@@ -32,5 +32,5 @@ spring:
 
 
 # Logging the details 
-logging:
-  file: EDPmailService.log
+#logging:
+ # file: EDPmailService.log
